@@ -1,7 +1,23 @@
 ---
   - hosts: all
+    become: yes
     tasks:
-    - name: instillation of docker
-      yum: 
-       name: docker
-       state: present
+    - name:  instillation of docker
+      apt: 
+        name: docker
+        state: present
+    
+    - name: install git
+      apt:
+        name: git
+        state: present
+
+    - name: install wget
+      apt:
+        name: wget
+        state: present
+
+    - name: install tree
+      apt:
+        name: tree
+        state: present     
