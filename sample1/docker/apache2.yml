@@ -1,7 +1,6 @@
 ---
-  - hosts: all
-    gathering_facts: no
-    tasks:
+ - hosts: all
+   tasks:
     - name: installing apache2 service and starting
       apt:
        name: apache2
