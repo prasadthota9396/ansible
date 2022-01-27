@@ -4,7 +4,7 @@
     tasks:
     - name:  instillation of docker
       apt: 
-        name: docker
+        name: docker-ce
         state: present
     
     - name: install git
